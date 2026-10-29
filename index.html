@@ -9,7 +9,8 @@
   <meta property="og:title" content="Quase Cinema Lab | Arte e Tecnologia">
   <meta property="og:description" content="Quase Cinema Lab: laboratório de Arte e Tecnologia em Brasília. Apps, software sob encomenda e visuais ao vivo.">
   <meta property="og:type" content="website">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="stylesheet" href="css/site.css">
   <script>if(/[?&]lang=en(&|$)/.test(location.search)){document.documentElement.classList.add('en');document.documentElement.lang='en';}</script>
   <script src="js/site.js" defer></script>
@@ -19,10 +20,11 @@
   <canvas id="bg" aria-hidden="true"></canvas>
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="index.html"><img src="assets/logo.svg" alt="Quase Cinema Lab" width="180" height="36"></a>
+      <a class="brand" href="index.html"><img src="assets/logo-header-dark.png" alt="Quase Cinema Lab" width="480" height="160"></a>
       <nav class="nav" aria-label="Principal / Main">
         <a href="index.html" aria-current="page"><span data-l="pt">Início</span><span data-l="en">Home</span></a>
         <a href="sobre.html"><span data-l="pt">Sobre</span><span data-l="en">About</span></a>
+        <a href="trabalhos.html"><span data-l="pt">Trabalhos</span><span data-l="en">Work</span></a>
         <a href="suporte.html"><span data-l="pt">Suporte</span><span data-l="en">Support</span></a>
         <a href="privacidade.html"><span data-l="pt">Privacidade</span><span data-l="en">Privacy</span></a>
         <a class="lang" href="?lang=en" data-lang-switch><span data-l="pt" aria-label="Switch to English">EN</span><span data-l="en" aria-label="Mudar para português">PT</span></a>
@@ -35,12 +37,12 @@
         <p class="eyebrow reveal">Quase Cinema Lab</p>
         <h1 class="reveal d1"><span data-l="pt">Arte e Tecnologia, do código à tela.</span><span data-l="en">Art and Technology, from code to screen.</span></h1>
         <p class="lead reveal d2">
-          <span data-l="pt">Somos um laboratório de Brasília que cria aplicativos, software sob medida e experiências audiovisuais em tempo real.</span>
-          <span data-l="en">We are a lab based in Brasília, Brazil, building apps, custom software and real time audiovisual experiences.</span>
+          <span data-l="pt">Somos um laboratório de Brasília onde escrita, técnica e arte trabalham juntas. Criamos aplicativos, software sob medida e experiências audiovisuais em tempo real.</span>
+          <span data-l="en">We are a lab based in Brasília, Brazil, where writing, technique and art work together. We build apps, custom software and real time audiovisual experiences.</span>
         </p>
         <div class="actions reveal d3">
           <a class="btn primary" href="mailto:rangel@quasecinema.org?subject=Projeto"><span data-l="pt">Fale sobre seu projeto</span><span data-l="en">Tell us about your project</span></a>
-          <a class="btn" href="sobre.html"><span data-l="pt">Conheça o lab</span><span data-l="en">About the lab</span></a>
+          <a class="btn" href="trabalhos.html"><span data-l="pt">Ver trabalhos</span><span data-l="en">See our work</span></a>
         </div>
       </section>
 
@@ -66,6 +68,91 @@
         </div>
       </section>
 
+      <section class="section" aria-labelledby="trabalhos">
+        <h2 id="trabalhos"><span data-l="pt">Trabalhos</span><span data-l="en">Work</span></h2>
+        <p class="muted"><span data-l="pt">Software livre, projeção mapeada, instalações interativas e audiovisual com IA, criados por Alexandre Rangel e pelo lab desde 2006.</span><span data-l="en">Free software, projection mapping, interactive installations and AI audiovisual, created by Alexandre Rangel and the lab since 2006.</span></p>
+        <div class="works works-teaser">
+        <article class="work" id="quase-cinema-vj">
+          <figure class="work-media"><img src="assets/portfolio/quase-cinema-vj.jpg" alt="Interface do software Quase-Cinema VJ" data-alt-en="Quase-Cinema VJ software interface" width="768" height="576" loading="lazy" decoding="async"></figure>
+          <div class="work-body">
+            <p class="work-meta"><span data-l="pt">Software livre</span><span data-l="en">Free software</span> &middot; <span class="work-year"><span data-l="pt">desde 2006</span><span data-l="en">since 2006</span></span></p>
+            <h3>Quase-Cinema VJ software</h3>
+            <p><span data-l="pt">Software livre de vídeo em tempo real para cinema ao vivo, VJing e performance audiovisual. A ferramenta que deu nome ao lab.</span><span data-l="en">Free real time video software for live cinema, VJing and audiovisual performance. The tool that gave the lab its name.</span></p>
+            <a class="work-link" href="https://alexandrerangel.art.br/quase-cinema.html" target="_blank" rel="noopener"><span data-l="pt">Ver obra em alexandrerangel.art.br</span><span data-l="en">See the work on alexandrerangel.art.br</span><span class="visually-hidden"> (Quase-Cinema VJ software)</span></a>
+          </div>
+        </article>
+        <article class="work" id="esculturas-quanticas">
+          <figure class="work-media"><img src="assets/portfolio/esculturas-quanticas.jpg" alt="Projeção das Esculturas Quânticas" data-alt-en="Projection of Esculturas Quânticas (Quantum Sculptures)" width="1200" height="675" loading="lazy" decoding="async"></figure>
+          <div class="work-body">
+            <p class="work-meta"><span data-l="pt">Instalação interativa</span><span data-l="en">Interactive installation</span> &middot; <span class="work-year"><span data-l="pt">desde 2019</span><span data-l="en">since 2019</span></span></p>
+            <h3>Esculturas Quânticas</h3>
+            <p><span data-l="pt">Video mapping e sistema audiovisual interativo em que o corpo do público esculpe matéria virtual. Museu Nacional da República e FIESP.</span><span data-l="en">Video mapping and an interactive audiovisual system in which the audience's bodies sculpt virtual matter. Museu Nacional da República and FIESP.</span></p>
+            <a class="work-link" href="https://alexandrerangel.art.br/esculturas-quanticas.html" target="_blank" rel="noopener"><span data-l="pt">Ver obra em alexandrerangel.art.br</span><span data-l="en">See the work on alexandrerangel.art.br</span><span class="visually-hidden"> (Esculturas Quânticas)</span></a>
+          </div>
+        </article>
+        <article class="work" id="tocando-brasilia">
+          <figure class="work-media"><img src="assets/portfolio/tocando-brasilia.jpg" alt="Público interagindo com Tocando Brasília" data-alt-en="Audience interacting with Tocando Brasília (Playing Brasília)" width="1200" height="900" loading="lazy" decoding="async"></figure>
+          <div class="work-body">
+            <p class="work-meta"><span data-l="pt">Software interativo</span><span data-l="en">Interactive software</span> &middot; <span class="work-year">2019</span></p>
+            <h3>Tocando Brasília</h3>
+            <p><span data-l="pt">Software interativo em que o público toca a cidade como uma partitura. Brasília Mapping Festival, Museu Nacional.</span><span data-l="en">Interactive software that lets the audience play the city like a musical score. Brasília Mapping Festival, Museu Nacional.</span></p>
+            <a class="work-link" href="https://alexandrerangel.art.br/tocandobrasilia.html" target="_blank" rel="noopener"><span data-l="pt">Ver obra em alexandrerangel.art.br</span><span data-l="en">See the work on alexandrerangel.art.br</span><span class="visually-hidden"> (Tocando Brasília)</span></a>
+          </div>
+        </article>
+        <article class="work" id="earth-affection">
+          <figure class="work-media"><img src="assets/portfolio/earth-affection.jpg" alt="Cena de Earth Affection" data-alt-en="Scene from Earth Affection" width="1200" height="900" loading="lazy" decoding="async"></figure>
+          <div class="work-body">
+            <p class="work-meta"><span data-l="pt">Arte e Tecnologia</span><span data-l="en">Art and Technology</span> &middot; <span class="work-year"><span data-l="pt">desde 2024</span><span data-l="en">since 2024</span></span></p>
+            <h3>Earth Affection</h3>
+            <p><span data-l="pt">Obra colaborativa em Arte e Tecnologia que reúne projeção, corpo e imagem generativa.</span><span data-l="en">A collaborative Art and Technology work bringing together projection, body and generative imagery.</span></p>
+            <a class="work-link" href="https://alexandrerangel.art.br/earth-affection.html" target="_blank" rel="noopener"><span data-l="pt">Ver obra em alexandrerangel.art.br</span><span data-l="en">See the work on alexandrerangel.art.br</span><span class="visually-hidden"> (Earth Affection)</span></a>
+          </div>
+        </article>
+        <article class="work" id="sopa-primordial">
+          <figure class="work-media"><img src="assets/portfolio/sopa-primordial.jpg" alt="Imagem do tríptico Sopa Primordial" data-alt-en="Still from the Sopa Primordial (Primordial Soup) triptych" width="1024" height="1024" loading="lazy" decoding="async"></figure>
+          <div class="work-body">
+            <p class="work-meta"><span data-l="pt">Audiovisual com IA</span><span data-l="en">AI audiovisual</span> &middot; <span class="work-year">2023</span></p>
+            <h3>Sopa Primordial</h3>
+            <p><span data-l="pt">Tríptico audiovisual criado com inteligência artificial. Mostra Nacional de Criptoarte, CCBB.</span><span data-l="en">An audiovisual triptych made with artificial intelligence. Mostra Nacional de Criptoarte (National Cryptoart Show), CCBB.</span></p>
+            <a class="work-link" href="https://alexandrerangel.art.br/sopa-primordial.html" target="_blank" rel="noopener"><span data-l="pt">Ver obra em alexandrerangel.art.br</span><span data-l="en">See the work on alexandrerangel.art.br</span><span class="visually-hidden"> (Sopa Primordial)</span></a>
+          </div>
+        </article>
+        <article class="work" id="bichos-impossiveis">
+          <figure class="work-media"><img src="assets/portfolio/bichos-impossiveis.jpg" alt="Bichos Impossíveis em exposição" data-alt-en="Bichos Impossíveis (Impossible Creatures) on display" width="1200" height="848" loading="lazy" decoding="async"></figure>
+          <div class="work-body">
+            <p class="work-meta"><span data-l="pt">Software interativo</span><span data-l="en">Interactive software</span> &middot; <span class="work-year">2014</span></p>
+            <h3>Bichos Impossíveis</h3>
+            <p><span data-l="pt">Software interativo em homenagem aos Bichos de Lygia Clark. Museu Nacional.</span><span data-l="en">Interactive software paying tribute to Lygia Clark's Bichos. Museu Nacional.</span></p>
+            <a class="work-link" href="https://alexandrerangel.art.br/bichos-impossiveis.html" target="_blank" rel="noopener"><span data-l="pt">Ver obra em alexandrerangel.art.br</span><span data-l="en">See the work on alexandrerangel.art.br</span><span class="visually-hidden"> (Bichos Impossíveis)</span></a>
+          </div>
+        </article>
+        </div>
+        <p class="actions section-cta"><a class="btn" href="trabalhos.html"><span data-l="pt">Todos os trabalhos</span><span data-l="en">All work</span></a></p>
+      </section>
+
+      <section class="section author" aria-labelledby="autoria">
+        <img class="author-mark" src="assets/logo-mark-dark.png" alt="" width="512" height="512" loading="lazy" decoding="async">
+        <div>
+          <h2 id="autoria"><span data-l="pt">Escrita, técnica e arte</span><span data-l="en">Writing, technique and art</span></h2>
+          <p>
+            <span data-l="pt">O Quase Cinema Lab é conduzido por Alexandre Rangel, artista multimídia, desenvolvedor de software e autor em Arte e Tecnologia. Doutor em Arte e Tecnologia pela Universidade de Brasília (UnB), com tese sobre o artista como desenvolvedor de sistemas computacionais.</span>
+            <span data-l="en">Quase Cinema Lab is led by Alexandre Rangel, a multimedia artist, software developer and author in Art and Technology. He holds a PhD in Art and Technology from the University of Brasília (UnB), with a thesis on the artist as a developer of computational systems.</span>
+          </p>
+          <p>
+            <span data-l="pt">A literatura e a escrita atravessam o trabalho do lab: roteiro, poesia, ensaio e o próprio código, lido como texto. Cada projeto nasce desse diálogo entre palavra, técnica e prática artística.</span>
+            <span data-l="en">Literature and writing run through the lab&rsquo;s work: scripts, poetry, essays and code itself, read as text. Every project grows out of this dialogue between words, technique and artistic practice.</span>
+          </p>
+          <p class="muted">
+            <span data-l="pt">Sites: <a href="https://quasecinema.org">quasecinema.org</a> e <a href="https://alexandrerangel.art.br" target="_blank" rel="noopener">alexandrerangel.art.br</a>.</span>
+            <span data-l="en">Websites: <a href="https://quasecinema.org">quasecinema.org</a> and <a href="https://alexandrerangel.art.br" target="_blank" rel="noopener">alexandrerangel.art.br</a>.</span>
+          </p>
+          <div class="actions">
+            <a class="btn" href="https://alexandrerangel.art.br/bio.html" target="_blank" rel="noopener"><span data-l="pt">Bio de Alexandre Rangel</span><span data-l="en">Alexandre Rangel&rsquo;s bio</span></a>
+            <a class="btn" href="sobre.html"><span data-l="pt">Sobre o lab</span><span data-l="en">About the lab</span></a>
+          </div>
+        </div>
+      </section>
+
       <section class="section" aria-labelledby="contato">
         <h2 id="contato"><span data-l="pt">Vamos conversar</span><span data-l="en">Let&rsquo;s talk</span></h2>
         <p class="muted">
@@ -78,7 +165,7 @@
   <footer class="site-footer">
     <div class="wrap">
       <p>&copy; <span data-year>2026</span> QUASE CINEMA LAB LTDA &middot; CNPJ 17.271.857/0001-49 &middot; Brasília/DF</p>
-      <p><a href="mailto:suporte@quasecinema.org">suporte@quasecinema.org</a> &middot; <a href="privacidade.html"><span data-l="pt">Privacidade</span><span data-l="en">Privacy</span></a></p>
+      <p><a href="https://quasecinema.org">quasecinema.org</a> &middot; <a href="https://alexandrerangel.art.br" target="_blank" rel="noopener">alexandrerangel.art.br</a> &middot; <a href="mailto:suporte@quasecinema.org">suporte@quasecinema.org</a> &middot; <a href="privacidade.html"><span data-l="pt">Privacidade</span><span data-l="en">Privacy</span></a></p>
     </div>
   </footer>
 </body>

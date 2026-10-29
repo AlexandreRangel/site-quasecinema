@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 64" role="img" aria-labelledby="t">
-  <title id="t">Quase Cinema</title>
-  <rect x="2" y="2" width="60" height="60" rx="14" fill="none" stroke="#5EEAD4" stroke-width="3"/>
-  <text x="32" y="42" text-anchor="middle" font-family="Avenir Next, Montserrat, Futura, Century Gothic, system-ui, sans-serif" font-size="26" font-weight="700" letter-spacing="1" fill="#5EEAD4">QC</text>
-  <text x="80" y="42" font-family="Avenir Next, Montserrat, Futura, Century Gothic, system-ui, sans-serif" font-size="28" font-weight="500" letter-spacing="0.5" fill="#F2F4F5">Quase Cinema</text>
-</svg>

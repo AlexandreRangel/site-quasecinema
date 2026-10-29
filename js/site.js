@@ -1,4 +1,4 @@
-/* Quase Cinema Lab - site v1
+/* Quase Cinema Lab - site v2
    i18n: Portuguese default, English via ?lang=en
    Motion: light canvas background, static when prefers-reduced-motion */
 (function () {
@@ -42,6 +42,12 @@
       a.setAttribute('href', withLang(location.href, target));
       a.setAttribute('hreflang', target === 'en' ? 'en' : 'pt-BR');
     });
+    // Image alt text in English
+    if (lang === 'en') {
+      document.querySelectorAll('img[data-alt-en]').forEach(function (img) {
+        img.setAttribute('alt', img.getAttribute('data-alt-en'));
+      });
+    }
     // Footer year
     document.querySelectorAll('[data-year]').forEach(function (el) {
       el.textContent = String(new Date().getFullYear());
