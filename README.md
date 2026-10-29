@@ -8,14 +8,15 @@ Preview (GitHub Pages): https://alexandrerangel.github.io/site-quasecinema/
 
 | Arquivo | Conteúdo |
 |---|---|
-| `index.html` | Home: Arte e Tecnologia, software sob encomenda, apps, visuais ao vivo |
-| `sobre.html` | Empresa: razão social, CNPJ, endereço, contatos, missão |
+| `index.html` | Home: Arte e Tecnologia, serviços, prévia dos trabalhos, autoria (Alexandre Rangel) |
+| `sobre.html` | Empresa e autoria: missão (literatura, técnica e arte), Alexandre Rangel, links para quasecinema.org, alexandrerangel.art.br e bio, dados da empresa |
+| `trabalhos.html` | Portfólio: 10 trabalhos com imagem, título, ano e texto curto, com links para as páginas das obras em alexandrerangel.art.br |
 | `suporte.html` | Suporte e FAQ do Tecno Tarot e apps (Support URL para as lojas) |
 | `privacidade.html` | Política de Privacidade PT + EN (Privacy Policy URL para as lojas) |
 
 Idioma: português por padrão; inglês com `?lang=en` na mesma página (ex.: `suporte.html?lang=en`). O idioma é mantido nos links internos.
 
-Arquivos compartilhados: `css/site.css`, `js/site.js` (i18n, fundo animado em canvas que fica estático com `prefers-reduced-motion` e pausa com a aba oculta), `assets/logo.svg`, `assets/favicon.svg`, `robots.txt`, `sitemap.xml`, `.nojekyll`.
+Arquivos compartilhados: `css/site.css`, `js/site.js` (i18n, fundo animado em canvas que fica estático com `prefers-reduced-motion` e pausa com a aba oculta), `assets/logo-header.png` (logo original, fundo branco), `assets/logo-header-dark.png` (versão clara sobre transparente, usada no cabeçalho escuro), `assets/logo-mark.png` e `assets/logo-mark-dark.png` (marca do projetor), `assets/favicon.png`, `assets/apple-touch-icon.png`, `assets/portfolio/*.jpg` (imagens dos trabalhos), `robots.txt`, `sitemap.xml`, `.nojekyll`.
 
 ## Rodar localmente
 
@@ -49,3 +50,9 @@ Atenção: se o e-mail do domínio usa registros MX, não alterá-los ao mexer n
 - Não citar clientes sob NDA; se preciso, "multinacional de tecnologia".
 - O software se escreve sempre `quasi-dj` (minúsculo, com hífen).
 - Sem travessões no texto; usar hífen ou reescrever.
+- Não citar BRISA nem Epson; não inventar prêmios.
+- Ao citar sites, citar os dois: https://quasecinema.org e https://alexandrerangel.art.br
+
+## Trabalhos (portfólio)
+
+Os cards de `trabalhos.html` (e os 6 primeiros na home) seguem a ordem do SPEC v2. Para trocar uma imagem, substituir o arquivo em `assets/portfolio/` mantendo o nome; as imagens são recortadas em 4:3 com `object-fit: cover`. O texto alternativo em inglês fica em `data-alt-en` e é aplicado por `js/site.js` com `?lang=en`.
