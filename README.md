@@ -1,6 +1,6 @@
 # site-quasecinema
 
-Site institucional estático da **Quase Cinema Lab** (QUASE CINEMA LAB LTDA). HTML, CSS e JS puros, sem build.
+Site institucional estático da **Quase-Cinema Lab** (Quase-Cinema Lab LTDA). HTML, CSS e JS puros, sem build.
 
 Preview (GitHub Pages): https://alexandrerangel.github.io/site-quasecinema/
 

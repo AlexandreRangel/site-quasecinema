@@ -1,4 +1,4 @@
-/* Quase Cinema Lab - site v2
+/* Quase-Cinema Lab - site v2
    i18n: Portuguese default, English via ?lang=en
    Motion: light canvas background, static when prefers-reduced-motion */
 (function () {
