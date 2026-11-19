@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://alexandrerangel.github.io/site-quasecinema/sitemap.xml
+Sitemap: https://quasecinema.org/sitemap.xml
