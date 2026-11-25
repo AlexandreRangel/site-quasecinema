@@ -18,6 +18,12 @@ Idioma: português por padrão; inglês com `?lang=en` na mesma página (ex.: `s
 
 Arquivos compartilhados: `css/site.css`, `js/site.js` (i18n, fundo animado em canvas que fica estático com `prefers-reduced-motion` e pausa com a aba oculta), `js/analytics.js` (Google Analytics 4, ID `G-5C44THF9QT`, com aviso de consentimento; sem consentimento nada é carregado), `assets/logo-header.png` (logo original, fundo branco), `assets/logo-header-dark.png` (versão clara sobre transparente, usada no cabeçalho escuro), `assets/logo-mark.png` e `assets/logo-mark-dark.png` (marca do projetor), `assets/favicon.png`, `assets/apple-touch-icon.png`, `assets/portfolio/*.jpg` e `*-640.jpg` (imagens dos trabalhos em 1200px e 640px, usadas em `srcset`), `assets/fonts/space-grotesk-*.woff2` (Space Grotesk, OFL, auto-hospedada — a marca não depende da fonte do SO), `robots.txt`, `sitemap.xml`, `.nojekyll`.
 
+## SEO
+
+- OG/Twitter com `assets/og-image.png` (1200x630), `hreflang` PT/EN e x-default (`?lang=en`) em todas as páginas.
+- JSON-LD (`Organization` + `Person` + `WebSite` + nó da página) no `<head>`; `trabalhos.html` traz `CollectionPage` com `ItemList` dos 13 destaques.
+- `sitemap.xml` é gerado por `python scripts/sitemap.py`, que usa a data do último commit de cada página como `lastmod`. Rode antes de publicar quando alguma página mudar.
+
 ## Rodar localmente
 
 ```bash
