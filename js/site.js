@@ -52,8 +52,107 @@
     document.querySelectorAll('[data-year]').forEach(function (el) {
       el.textContent = String(new Date().getFullYear());
     });
+    initCopy();
+    initWorkDialog();
     initBackground();
   });
+
+  // Copiar e-mail para a área de transferência
+  function initCopy() {
+    document.querySelectorAll('[data-copy]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var value = btn.getAttribute('data-copy');
+        var spans = btn.querySelectorAll('[data-l]');
+        var original = [];
+        spans.forEach(function (s) { original.push(s.textContent); });
+
+        function feedback() {
+          var l = root.classList.contains('en') ? 'en' : 'pt';
+          var label = btn.getAttribute('data-copied-label-' + l) || 'copiado';
+          spans.forEach(function (s) { s.textContent = label; });
+          btn.setAttribute('data-copied', '1');
+          setTimeout(function () {
+            spans.forEach(function (s, i) { s.textContent = original[i]; });
+            btn.removeAttribute('data-copied');
+          }, 2000);
+        }
+
+        function legacyCopy() {
+          try {
+            var ta = document.createElement('textarea');
+            ta.value = value;
+            ta.setAttribute('readonly', '');
+            ta.style.position = 'fixed';
+            ta.style.top = '-1000px';
+            document.body.appendChild(ta);
+            ta.select();
+            document.execCommand('copy');
+            document.body.removeChild(ta);
+            feedback();
+          } catch (e) { /* sem suporte: nada acontece */ }
+        }
+
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(value).then(feedback, legacyCopy);
+        } else {
+          legacyCopy();
+        }
+      });
+    });
+  }
+
+  // Diálogo de detalhe da obra, preenchido a partir do card
+  function initWorkDialog() {
+    var dialog = document.getElementById('obra');
+    if (!dialog || typeof dialog.showModal !== 'function') return;
+
+    var img = document.getElementById('obra-img');
+    var meta = document.getElementById('obra-meta');
+    var title = document.getElementById('obra-titulo');
+    var desc = document.getElementById('obra-desc');
+    var link = document.getElementById('obra-link');
+    var lastTrigger = null;
+
+    function fill(card) {
+      var pic = card.querySelector('.work-media img');
+      if (pic) {
+        img.src = pic.currentSrc || pic.src;
+        img.alt = root.classList.contains('en')
+          ? (pic.getAttribute('data-alt-en') || pic.alt)
+          : pic.alt;
+        img.width = pic.getAttribute('width') || 1200;
+        img.height = pic.getAttribute('height') || 675;
+      }
+      var m = card.querySelector('.work-meta');
+      meta.innerHTML = m ? m.innerHTML : '';
+      var t = card.querySelector('h2, h3');
+      title.innerHTML = t ? t.innerHTML : '';
+      var d = card.querySelector('.work-body p:not(.work-meta)');
+      desc.innerHTML = d ? d.innerHTML : '';
+      var a = card.querySelector('a.work-link[href]');
+      if (a) link.href = a.href;
+    }
+
+    document.querySelectorAll('[data-obra]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var card = btn.closest('.work');
+        if (!card) return;
+        fill(card);
+        lastTrigger = btn;
+        dialog.showModal();
+      });
+    });
+
+    dialog.addEventListener('close', function () {
+      if (lastTrigger) lastTrigger.focus();
+    });
+    dialog.addEventListener('click', function (e) {
+      if (e.target === dialog) dialog.close();
+    });
+    dialog.querySelectorAll('[data-obra-close]').forEach(function (b) {
+      b.addEventListener('click', function () { dialog.close(); });
+    });
+  }
 
   function initBackground() {
     var canvas = document.getElementById('bg');

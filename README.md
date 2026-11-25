@@ -16,7 +16,7 @@ Preview (GitHub Pages): https://alexandrerangel.github.io/site-quasecinema/
 
 Idioma: português por padrão; inglês com `?lang=en` na mesma página (ex.: `suporte.html?lang=en`). O idioma é mantido nos links internos.
 
-Arquivos compartilhados: `css/site.css`, `js/site.js` (i18n, fundo animado em canvas que fica estático com `prefers-reduced-motion` e pausa com a aba oculta), `js/analytics.js` (Google Analytics 4, ID `G-5C44THF9QT`, com aviso de consentimento; sem consentimento nada é carregado), `assets/logo-header.png` (logo original, fundo branco), `assets/logo-header-dark.png` (versão clara sobre transparente, usada no cabeçalho escuro), `assets/logo-mark.png` e `assets/logo-mark-dark.png` (marca do projetor), `assets/favicon.png`, `assets/apple-touch-icon.png`, `assets/portfolio/*.jpg` (imagens dos trabalhos), `robots.txt`, `sitemap.xml`, `.nojekyll`.
+Arquivos compartilhados: `css/site.css`, `js/site.js` (i18n, fundo animado em canvas que fica estático com `prefers-reduced-motion` e pausa com a aba oculta), `js/analytics.js` (Google Analytics 4, ID `G-5C44THF9QT`, com aviso de consentimento; sem consentimento nada é carregado), `assets/logo-header.png` (logo original, fundo branco), `assets/logo-header-dark.png` (versão clara sobre transparente, usada no cabeçalho escuro), `assets/logo-mark.png` e `assets/logo-mark-dark.png` (marca do projetor), `assets/favicon.png`, `assets/apple-touch-icon.png`, `assets/portfolio/*.jpg` e `*-640.jpg` (imagens dos trabalhos em 1200px e 640px, usadas em `srcset`), `assets/fonts/space-grotesk-*.woff2` (Space Grotesk, OFL, auto-hospedada — a marca não depende da fonte do SO), `robots.txt`, `sitemap.xml`, `.nojekyll`.
 
 ## Rodar localmente
 
