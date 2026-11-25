@@ -6,7 +6,7 @@
 (function () {
   'use strict';
 
-  var GA4_ID = ''; // <-- ID de fluxo de dados do GA4
+  var GA4_ID = 'G-5C44THF9QT'; // fluxo "http://www.quasecinema.org - GA4"
   var CONSENT_KEY = 'qc-analytics-consent';
   var root = document.documentElement;
   var lang = root.lang === 'en' || root.classList.contains('en') ? 'en' : 'pt';
