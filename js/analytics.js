@@ -64,7 +64,7 @@
     box.innerHTML =
       '<p class="consent-text">' + t.message + '</p>' +
       '<div class="consent-actions">' +
-      '<button type="button" class="btn primary consent-accept">' + t.accept + '</button>' +
+      '<button type="button" class="btn consent-accept">' + t.accept + '</button>' +
       '<button type="button" class="btn consent-decline">' + t.decline + '</button>' +
       '<a class="consent-policy" href="' +
       (lang === 'en' ? 'privacidade.html?lang=en' : 'privacidade.html') +
@@ -75,12 +75,15 @@
       saveConsent('granted');
       loadTag();
       box.remove();
+      document.body.classList.remove('consent-open');
     });
     box.querySelector('.consent-decline').addEventListener('click', function () {
       saveConsent('denied');
       box.remove();
+      document.body.classList.remove('consent-open');
     });
 
+    document.body.classList.add('consent-open');
     document.body.appendChild(box);
   }
 
